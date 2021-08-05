@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+		<link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="style.css" rel="stylesheet" type="text/css" />
+
+
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+	  	<script src="//code.jquery.com/jquery-1.12.4.js"></script>
+	 	<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+		</head>
+		<body>
+		<div id="wrapper">
+			<div class="banner"></div>
+			<div id="filtres">
+				<button class="btn-filtre" data-type="boisson"><i class="fa fa-glass" aria-hidden="true"></i>&nbsp;&nbsp;Boissons</button>
+				<button class="btn-filtre" data-type="nourriture"><i class="fa fa-cutlery" aria-hidden="true"></i>&nbsp;&nbsp;Nourriture</button>
+				<button class="btn-filtre" data-type="consommables"><i class="fa fa-hourglass" aria-hidden="true"></i>&nbsp;&nbsp;Consommable</button>
+				<button class="btn-filtre" data-type="divers"><i class="fa fa-cog" aria-hidden="true"></i>&nbsp;&nbsp;Divers</button>
+				<button class="btn-filtre" data-type="all"><i class="fa fa-trash" aria-hidden="true"></i>&nbsp;&nbsp;Supprimer filtres</button>
+			</div>
+			<div id="carticon" class = "carticon">
+		   		<div id="cartcount" class = "cartcount"></div>
+		   		<i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;Votre panier
+		   	</div>
+			<div id="list-items"></div>
+		</div>
+
+		<div id="cart">
+				<!-- <button class="button" id = "buybutton" style = "position: absolute; right: 15px; top: 5px;">Purchase</button> -->
+				<!-- <button class="button" id = "back" style = "position: absolute; left: 15px; top: 5px;">Back</button> -->
+	    </div>
+
+
+
+
+		<script src="script.js" type="text/javascript"></script>
+	</body>
+</html>

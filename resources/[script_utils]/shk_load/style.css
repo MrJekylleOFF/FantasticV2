@@ -1,0 +1,236 @@
+* {margin:0; padding: 0;}
+body {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;	
+	/*cursor: none;*/
+	overflow: hidden;
+}
+
+.sky {
+	position: absolute;
+    top: -630px; left: 0; bottom: 0; right: 0;
+    width: 100%;
+    opacity: 1;
+	/*background: linear-gradient(to bottom, #020111 10%,#3a3a52 100%);*/
+	background: url(http://andreypokrovskiy.com/image_hosting/boredom/space-bg.jpg) repeat;
+	-webkit-animation: backdrop_roll linear 100s infinite;
+    -moz-animation: backdrop_roll linear 100s infinite;
+    -ms-animation: backdrop_roll linear 100s infinite;
+    -o-animation: backdrop_roll linear 100s infinite;
+    animation: backdrop_roll linear 100s infinite;
+}
+@-webkit-keyframes backdrop_roll { from { top: -630px; } to { top: 0; } }
+@-moz-keyframes backdrop_roll { from { top: -630px; } to { top: 0; } }
+@-ms-keyframes backdrop_roll { from { top: -630px; } to { top: 0; } }
+@-o-keyframes backdrop_roll { from { top: -630px; } to { top: 0; } }
+@keyframes backdrop_roll { from { top: -630px; } to { top: 0; } }
+
+#count {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	color: #fff;
+	font-size: 20px;
+	font-family: 'Shadows Into Light', cursive;
+}
+
+.life-bar-cont {
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+	width: 20px;
+	height: 220px;
+	background: #2f2828;
+	border-radius: 15px 15px 0 0;
+}
+
+.life-bar {
+	position: absolute;
+	width: 10px;
+	height: 200px;
+	top: 10px;
+	left: 5px;
+	background: #ccc;
+	z-index: 9999px
+}
+
+h1 {
+	color: rgba(255, 255, 255, 0.20);
+	font-family: 'Shadows Into Light', cursive;
+    font-size: 40pt;
+    margin-top: 1%;
+    margin-left: 42%;
+    overflow: visible;
+    position: absolute;
+	z-index: 9999px;
+
+	animation: smoothBlink 5s infinite ease-in-out alternate;
+}
+@keyframes smoothBlink {
+    from {color: rgba(255, 255, 255, 0.15);}
+    to {color: white;}
+}
+
+h2 {
+	color: rgba(255, 255, 255, 0.20);
+	font-family: 'Shadows Into Light', cursive;
+    font-size: 15pt;
+    margin-top: 53%;
+    margin-left: 37%;
+    overflow: visible;
+    position: absolute;
+    z-index: 9999px;
+}
+
+h3 {
+	color: rgba(255, 255, 255, 0.20);
+	font-family: 'Shadows Into Light', cursive;
+    font-size: 12pt;
+	top: 1050px;
+	left: 920px;
+    overflow: visible;
+    position: absolute;
+    z-index: 9999px;
+}
+
+.life-bar .inside-bar {	
+	position: absolute;
+	width: 100%;
+	height: 200px;
+	left: 0;
+	bottom:0;
+	background: cyan;
+}
+
+#ship {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	top: 70%;
+	left: 50%;
+	margin-left: -50px;
+	background: url('https://i.imgur.com/fu4owJH.png') no-repeat 50% 50%;
+	z-index: 1000;
+}
+
+.explode {
+	position: absolute;
+	top:  50%;
+	left: 50%;
+	width: 120px;
+	height: 180px;
+	z-index: 2000;
+}
+
+.palyerExplode {
+	position: absolute;
+	width: 70px;
+	height: 100px;
+	top:  50%;
+	left: 50%;
+	z-index: 2000;
+}
+
+.palyerExplode img, .explode img {
+	width: 100%;
+	height: auto;
+}
+
+.bullet {
+	position: absolute;
+	width: 3px;
+	height: 10px;
+	
+	border-radius: 5px;
+	
+	margin-left: -5px;
+	background: red;
+	z-index: 1000;
+}
+.enemy-bullet {
+	position: absolute;
+	width: 5px;
+	height: 5px;	
+	border-radius: 3px;
+	background: cyan;
+	z-index: 900;
+}
+
+.enemy-1 {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	top: -50px;
+	left: 50%;
+	background: url(http://andreypokrovskiy.com/image_hosting/boredom/enemy1.png) no-repeat center;
+	z-index: 950;
+}
+
+
+
+.small-star {
+	position: absolute;
+	width: 2px;
+	height: 2px;
+	border-radius: 1px;	
+	left: 0; top: -50px;
+	background: #fff;
+	z-index: 1;
+}
+
+.planet {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;	
+	left: 0; top: -50px;
+	background: linear-gradient(to right, #2d2d2d 20%,#ccc 100%);
+	z-index: 10;
+}
+
+.huge-planet {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	border-radius: 75px;	
+	left: 0; top: -200px;
+	background: url(http://andreypokrovskiy.com/image_hosting/boredom/planet2.png) no-repeat;
+	z-index: 50;
+}
+
+.exp-planet {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	border-radius: 75px;	
+	left: 0; top: -200px;
+	background: url(http://andreypokrovskiy.com/image_hosting/boredom/planet3.png) no-repeat;
+	z-index: 50;
+}
+
+.moon {
+	position: absolute;
+	width: 500px;
+	height: 500px;
+	border-radius: 250px;	
+	left: 0; top: -500px;
+	z-index: 100;
+
+	background: url(http://andreypokrovskiy.com/image_hosting/boredom/planet1.png) no-repeat center; 
+}
+
+.asteroid {
+	position: absolute;
+	width: 100px;
+	height: 65px;
+	
+	left: 0; top: -65px;
+	z-index: 100;
+
+	background: url(http://andreypokrovskiy.com/image_hosting/boredom/asteroid1.png) no-repeat center; 
+}

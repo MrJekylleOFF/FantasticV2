@@ -1,0 +1,2 @@
+INSERT INTO `items` (`name`, `label`, `limit`, `rare`, `can_remove`) VALUES ('viande', 'Viande', 1000, 0, 1);
+INSERT INTO `items` (`name`, `label`, `limit`, `rare`, `can_remove`) VALUES ('viande2', 'Viande à Kebab', 1000, 0, 1);

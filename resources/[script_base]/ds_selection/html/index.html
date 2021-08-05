@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<div class="main">
+		<h1>SELECT YOUR SPAWN LOCATION</h1>
+
+		<div class="buttons">
+			<button class="button" id="Letiste">Airport</button>
+			<button class="button" id="Pristav">Dock</button>
+			<button class="button" id="Vlak">Metro</button>
+			<button class="button" id="Banka">Bank</button>
+		</div>
+	</div>
+
+</body>
+
+</html>
+
+<script type="text/javascript">
+	$(function () {
+		window.addEventListener("message", function (passed) {
+			var data = passed.data
+
+			switch (data["Action"]) {
+				case "OPEN_SPAWNMENU":
+					$("body").fadeIn(1000)
+
+					break
+				default:
+					console.log("Could not read message with action: " + data.Action)
+					break
+			}
+		})
+	});
+
+	$(".button").click(function () {
+		const Location = this.id
+
+		$("body").fadeOut(500, function () {
+			$.post("http://ds_selector/spawnPlayer", JSON.stringify({
+				["Location"]: Location
+			}));
+		});
+	})
+
+</script>

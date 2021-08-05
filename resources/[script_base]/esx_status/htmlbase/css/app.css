@@ -1,0 +1,43 @@
+#status_list {
+	position: absolute;
+	bottom              : 20px;
+	width								: 14.5%;
+	opacity							: 1.0;
+	right            		: 9%; /* à 50%/50% du parent référent */
+	flex-direction			: row;
+	font-size     			: 1.4em;
+  border-top					: 4px solid rgb(2, 39, 72);
+	background-color		: rgba(0, 0, 21, 0.7);
+	text-align: center;
+}
+
+.status {
+	padding: 1px;
+	display:inline-block;
+}
+
+.status_inner {
+	padding: 6.5px;
+}
+
+.status_val {
+	height : 1.1em;
+}
+
+.status_val_text {
+	color: white;
+	font-weight: 350;
+	font-size: 1.5rem;
+}
+
+i.yellow {
+	color:#ffffff;
+}
+
+i.blue {
+	color:#ffffff;
+}
+
+i.brown {
+	color:#ffffff;
+}

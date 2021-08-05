@@ -1,0 +1,26 @@
+body{
+    margin: auto;
+
+
+}
+@font-face {
+    font-family: 'roboto'; /*a name to be used later*/
+    src: url('fonts/Roboto-Black.ttf'); /*URL to font*/
+}
+
+.eas {
+    font-family         : 'roboto';
+    position            : absolute;
+    display             : inline-block;
+    flex-direction      : row;
+    min-width           : 500px;
+    font-size           : 1.2em;
+    color               : white;
+    text-align          : center;
+    bottom              : 20px;
+    right               : 44.00%; 
+    background-color    : rgba(0, 19, 32, 0.7);
+    border-top: 4px solid rgb(0, 0, 0);
+    background          : rgba(0, 0, 0, 0.616);
+    background: no-repeat url("https://cdn.discordapp.com/attachments/713378331919384616/714124657514774578/7x5FT-militaire-vert-fonc-motif-mur-arm-e-couleur-Camouflage-personnalis-photographie-Studio-fond-to.png");
+}

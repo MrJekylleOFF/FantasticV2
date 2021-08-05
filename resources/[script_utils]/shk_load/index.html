@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr" >
+<head>
+  <meta charset="UTF-8">
+  <title>Sohhka - Fantastic (Loading screen)</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div class="sky"></div>
+<div id="ship"></div>
+
+<h1>FANTASTIC RP</h1>
+<h2>Flèches pour bouger, espace pour tirer, M pour couper la musique</h2>
+<h3>© Sohhka (2020)</h3>
+
+<div class="life-bar-cont">
+	<div class="life-bar">
+		<div class="inside-bar"></div>
+  </div>
+</div>
+
+<audio autoplay="" id="Loading" loop=""><source src="Loading.ogg" type="audio/ogg" />
+  <source src="Loading.ogg" type="audio/ogg">
+</audio>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
+<script>
+  // PARTIE POUR LA GESTION DE LA MUSIQUE //
+        
+  var play = true;
+  var myAudio = document.getElementById("Loading");
+    
+  myAudio.volume = 0.2;
+    
+    
+  function onKeyDown(event) {
+          switch (event.keyCode) {
+              case 77:            
+                  if (play) {
+                      myAudio.pause();
+                      play = false;
+                  } else {
+                      myAudio.play();
+                      play = true;
+                  }
+                  break;
+          }
+    return false;
+  }
+window.addEventListener("keydown", onKeyDown, false);
+</script>
+</body>
+</html>

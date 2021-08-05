@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Syncopate|Unica+One');
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300,100italic,100);
+
+body {
+    overflow-y: hidden;
+    display: none;
+    
+}
+
+button {
+    padding: 4%;
+    margin: 5%;
+    background: #a5a5a5;
+    border: none;
+}
+
+h1 {
+    padding: 10%;
+    font-family: 'Francois One', sans-serif;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+button {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    font-weight: bolder;
+    background: #696969;
+    margin-left: 25%;
+    height: 80px;
+    width: 50%;
+    display: block;
+    border-radius: 5px;
+    transition: 0.30s
+}
+
+button:hover {
+    background: #3f3e3e;
+    transition: 0.30s
+}
+
+.main{
+    background-color: rgb(41, 41, 41);
+	width: 420px;
+    height: 710px;
+    margin-left: 40%;
+    margin-top: 3%;
+    border-radius: 5px;
+}

@@ -1,0 +1,2 @@
+ALTER TABLE `owned_vehicles`
+	ADD COLUMN `kms` BIGINT NOT NULL DEFAULT '0';
